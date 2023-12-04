@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <title>test</title>
+    <link rel="stylesheet" href="CSSのパスをあとで記入">
+    <script type="text/javascript">
+    <!--
+      var mylink = new Array(
+        "https://docs.google.com/forms/d/1AGSx7HOY8iMDdQFOmTg7Zz4SYs-A-0BOKVBZ5DWgJEI/edit",
+        "https://docs.google.com/forms/d/1VAnUt27pBp_jdt3I_WIRS62doANZMKaRgWet0xA_GRM/edit",
+        "https://docs.google.com/forms/d/10hjh36pJS3Kwmr0NcHK0CHTkX5bxqv8qf80iO0qedQg/edit",
+        "https://docs.google.com/forms/d/1l5KsAvb1nLYdFqR3f-4htvC1tObnxBzkrxMcSIyL4QQ/edit"
+      );
+      function random_jump() {
+        var i = Math.floor(Math.random() * mylink.length);
+        location.href = mylink[i];
+      }
+    // -->
+    </script>
+  </head>
+  <body>
+    <h1>社内向けAmplitude Certification</h1>
+    <p>受講開始ボタンを押すと、受講画面に遷移します。</p>
+    <p>下記リンクを押すたびに遷移問題が変更になるため、[必ず]遷移後の受講画面のリンクを保存しておいてください。</p>
+    <a href="javascript:random_jump();">受講開始</a>
+  </body>
+</html>
